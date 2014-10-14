@@ -1,68 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>21457027김희진</title>
-    <style>
-      *{
-        font-family:"Nanum gothic" ,"malgun gothic", "applegothic", San-serif;
-      }
-
-      .bizcard {
-        border: 1px none;
-        border-radius: 6px;
-        box-shadow: 1px 1px 2px black;
-        padding: 10px;
-      }
-       
-      ul{
-        list-style-type: none;
-        padding: 0px;
-      }
-   
-      .title {
-    font-size: smaller;
-       
-}
-        
-    div {
-        text-align: right;
+<head>
+  <meta charset="utf-8">
+  <title>감희진</title>
+  <style>  
+      .test {
+      max-width: 600px;
+      margin: 0 auto;
     }
-    </style>
-    </head>
-    <body>
-     
-
-      <div class="bizcard">
-      <div>계원예술대학교 시각디자인과</div>
-      <h1>김희진 <span class="title">학생</span></h1>
-      
-        
-        <hr />
-        
-
-     <table>
-  <thead>
-     </thead>
-  <tbody>
-          
-    <tr>
-      <td>E-mail</td>
-      
-    <td><a href="mailto:ple880428@naver.com">ple880428@naver.com</a> </td>
-    </tr>
+   body {
+      background-color: pink;
+         }
+   *{
+      font-family:"Nanum gothic" ,"malgun gothic", "applegothic", san-serif; }
   
-    <tr>
-      <td>Phone</td>
-      <td><a href="tel:010-5297-5204">010-5297-5204</a></td>
-    </tr>
-    <tr>
-      <td>SNS</td>
-      <td><a href="http://blog.naver.com/ple880428">http://blog.naver.com/ple880428</a>
-      </td></tr>
+    h1 { text-align: center; }
+   
+    .bigtitle {  
+          border: 0px solid #CCC;
+      background-color: black;
+      padding: 0.1px;
+      font-size:35px;
+      color: white;
+      padding-top: 0;
+      margin: 30px;
+          }
+  .name { 
+    float: right; 
     
-   </tbody>
+  }
+    
+  .blue {
+    color: skyblue; 
+    text-align: right;
+    border: 6px solid #CCC;
+    
+     width: 600px;
+      height: 50px;
+    }
+  
+  .강조 { background-color: skyblue; 
+    border: 3px solid #CCC;
+ 
+    left : 0;
+     right: 0;
+       bottom: 0;
+          }
+    
+    .testimg {  margin :5px;
+    width: 100px;
+      margin:10px;
+      padding : 10px;
+       float: right; }
+.표{ 
+  margin-left: auto; margin-right: auto;
+  background-color: white;
+    text-align: center;
+ box-shadow: 1px 3px 3px black;}  
+    
+    .표글자 { font-weight:bold; }
+  .last { font-style: Italic;}
+    
+    
+  </style>
+</head>
+<body>
+  
+ <div class="test">
+   <div class="bigtitle">
+ 
+    <h1 >중간고사</h1> </div>
+  
+   <div class="name">
+ 김희진</div>
+   
+ <div class="blue">
+ <h2>HTML이란?</h2></div> 
+
+   <p>HTML은 <div class="강조">하이퍼텍스트 마크업 언어(Hypertext Markup Language)</div>의 약자로, 웹 페이지를 만들 때 사용되는 문서 형식입니다. </p>
+  <p>하이퍼텍스트(Hypertext)란 하이퍼링크(Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결되어 있는 고리를 말합니다.</p>
+  <div class="blue">
+  <h2>인라인 요소 목록</h2></div>
+  <p>다음은 HTML에서 자주 사용되는 요소들입니다. </p>
+  <ul>
+    
+   <li><div class="강조">a</div>: 하이퍼링크 (Anchor)</li>
+   <li><div class="강조">img</div>: 이미지 (Image)</li>
+   <li><div class="강조">span</div>: 일반용도의 인라인 (Span)</li>
+   <li><div class="강조">strong</div>: 중요 (Strong)</li>
+   <li><div class="강조">em</div>:강조 (Emphasis)</li>
+     
+  </ul>
+
+  <div class="blue">
+   <h2>CSS란?</h2></div>
+   <p>CSS는 Cascading Stylesheet의 약자이며 HTML같은 마크업 언어로 작성된 문서를 꾸미기 위해 사용합니다. HTML 문서의 head 요소 안에 style 요소를 넣고 CSS코드를 적으면      해당 문서를 다양하게 꾸밀 수 있습니다. </p>
+   <p>CSS에 대한 더 자세한 설명은 <a href="http://www.w3.org/People/Berners-Lee/">CSS</a>문서를 참고하세요.</p>
+
+  
+  <div class="blue">
+   <h2>중첩된 목록</h2></div>
+   <p>목록 요소 안에 또다른 목록 요소를 중첩하여 사용할 수 있습니다. </p>
+  
+  
+    
+  <h3>1. 홍길동</h3>
+   <ul>
+    <li>지각 없음</li>
+    <li>결석 없음</li>
+    <li>과제 만점</li>
+  </ul>
+     <h3>2. 이몽룡</h3>
+     <ul>
+    <li>지각 2회</li>
+    <li>결석 없음</li>
+    <li>과제 만점</li>
+  </ul> 
+  <div class="blue">
+    <h2>표만들기</h2></div>
+    <p>표를 만들려면 table 요소를 사용합니다. </p>
+
+<table class="표" >
+
+
+ 
+<tr class="표글자" >
+  
+<td>음료</td>
+<td>가격</td>
+<td>알콜</td>
+
+  
+</tr>
+  
+<tr >
+  <td>아메리카노</td>
+  <td>2,000</td>
+<td>X</td>  </tr>
+     
+<tr >
+  <td>카페모카</td>
+  <td>2,500</td>
+<td>X </td>  </tr>
+     
+<tr >
+  <td>맥주</td>
+  <td>3,000</td>
+<td>Y</td>  </tr>
+   
 </table>
-           </div>
-    </body>
+    
+  <div class="blue">
+    <h2>이미지 넣기</h2></div>
+ <img class="testimg" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="kaywon">
+    <p>이미지를 넣으려면 img요소를 사용합니다. </p>
+    <p>SRC 속성에는 이미지 경로(URL)를 적습니다.</p>
+    <p>이미지 요소에는 항상 alt 속성을 사용하여 대체 텍스트를 명시해주어여 합니다. "alt"는 Alternative text"의 약자로, 이미지를 표시할 수 없을 때 이미지를 대신하여 나타         낼 텍스트를 뜻합니다.</p>
+  
+  
+  
+  
+  
+  <hr/>
+  <div class="last"> 2014년 10월 14일 중간고사 김희진 작성 </div>
+
+  </div>
+</body>
 </html>
