@@ -1,39 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Gmail</title>
-  <style>
-  
-  .manubar { font-size : 20pt;
-             font-family:'Open Sans Condensed', 'Nanum Gothic', Sans-serif;
-             font-weight : bolder;   
-             padding-left:1em;
-             color : white;
-             list-style-type : none;
-             background-color: #ff000d;
-             display: inline-block;
-             height: 80px;
-             }
-  
+    <meta charset="utf-8">
+    <title>Inbox - Primary</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+      .뉴 {      background-color: #2070D1;
+         display: inline;
+         color: white;
+         font-size: 14px;
+        padding: 0.1em 1em 0.4em 1em;
+        margin-left: 5em;
+        
+}
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        header, section.pane {
+            padding: 1em 1em 0.6em 1em;
+        }
+
+        header {
+            height: 52px;
+            background-color: #DA4336;
+            color: white;
+            vertical-align: top;}
+
+        header .menu {
+            display: inline-block;
+            width: 50px; }
+      .메뉴 {
+       width: 25px; }
+      .돋보기 { width: 25px;
+                margin-left: 200px;}
+      .파일 {width: 20px;
+      margin-left: 169px;}
+      .휴지통 {width: 20px;
+      margin-left: 30px;}
+      .메일 { width: 20px;
+      margin-left: 30px;}
+      .내보내기 {width: 20px;
+      margin-left: 30px; }
+      .기타 {width: 20px;
+      margin-left: 20px; }
+      
+      .사람들 { 
+      list-style-type : none;
+      margin-right:50px;
+       margin-top:-55px;}
+      
+      .이미지사람들 {display: inline; 
+       width: 30px;
+        margin-right: 200px;
+        list-style-type : none;
+     margin-left: 20px;
+      margin-bottom: -5px;}
+      
+     section.list.pane ul {
+       list-style-type : none;
+     } 
+      
+      section.content.pane ul
+      { list-style-type : none;}
+      section.content.pane ul h1 {   font-size: 24px;}
+      
+      .웃 { background-color: skyblue;
+      margin-left: 250px;
+        display: inline;}
+      
+      
+        header h1 {
+            display: inline;
+            font-size: 1rem;
+            font-weight: normal;
+            vertical-align: top;
+        }
+
+        section.side {
+            position: absolute;
+            top: 52px;
+            left: 0;
+            width: 64px;
+            bottom: 0;
+            background-color: white;
+        }
+        section.mainarea {
+            position: absolute;
+            top: 52px;
+            left: 64px;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            box-shadow: -1px 0px 6px #CCC;
+        }
+
+        section.list,
+        section.content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: white;
+            box-shadow: -1px 0px 6px #CCC;
+            overflow-y: scroll;
+        }
+
+        section.list {
+            width: 40%;
+            left: 0;
+            z-index: 1;
+                 }
+        section.content {
+            width: 60%;
+            right: 0;
+        }
+      .여자 {      display: inline;
+            border-radius: 4em;
+        height: 50px;}
+      .이름 { margin-right:80px;
+       margin-top:-55px;}
+      
+      .사이드 { 
+        list-style-type : none;
+        padding: 0;
+       
+              }
+      .여자2 {display: inline;
+        border-radius: 4em;
+      height: 50px;
+      margin-bottom: 15px;}
+      .박스 {width: 30px;
+      margin-left: 5px;
+        margin-bottom: 15px;
+      }
+      .사람2 {width: 28px;
+      margin-left: 5px;
+      margin-bottom: 15px;}
+      .태그2 {width: 28px;
+      margin-left: 5px;
+      margin-bottom: 15px;}
+      .정보2 {width: 30px;
+      margin-left: 5px;}
+      
     </style>
-</head>
+</head>    
 <body>
   
-  <ul class="manubar">
-    
-    <li>Primary</li>
-    <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/줄세개.png" alt="메뉴"class="m"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/돋보기.png" alt="돋보기"class="d"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/파일다운.png" alt="파일다운"class="f"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/휴지통.png" alt="휴지통"class="h"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/메일.png" alt="메일"class="m2"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/내보내기.png" alt="내보내기"class="n"></li>
-        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/기타.png" alt="기타"class="g"></li>
-    
-  </ul>
-  
-  
+ <header>
+        <div class="menu">
+      <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/줄세개.png" alt="메뉴" class="메뉴">
+        </div>
+        <h1>Primary</h1>
+      <h1> <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/돋보기.png" alt="돋보기" class="돋보기"></h1>
+        <h1><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/파일다운.png" alt="파일다운"class="파일"></h1>
+              <h1><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/휴지통.png" alt="휴지통"class="휴지통"></h1>
+                    <h1><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/메일.png" alt="메일"class="메일"></h1>
+         <h1><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/내보내기.png" alt="내보내기"class="내보내기"></h1>
+              <h1><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/기타.png" alt="기타"class="기타"></h1>
+          
+   
+         
+    </header>
 
+    <section class="side pane">
+      <ul class="사이드">
+        <li>
+          <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/여자.png" alt="여자" class="여자2"> </li>
+        <li> <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/박스.png" alt="박스" class="박스"> </li>
+        <li> <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/사람들.png" alt="사람2" class="사람2"> </li>
+        <li> <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/태그.png" alt="태그2" class="태그2"> </li>
+        <li> <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/정보.png" alt="정보2" class="정보2"> </li>
+      </ul>
+    </section>
+    
+      <section class="mainarea">
 
+        <section class="list pane">
+              <img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/사람들.png" alt="사람" class="이미지사람들">  
+            <ul>                                      
+             <li>          
+            <ul class="사람들"> 
+           <li>Social</li>
+          <li>Google+</li>
+             
+               </ul></li>
+
+            </ul>
+        </section>
+        <section class="content pane">
+                     <ul>
+              <li><h1>Border game night?</h1></li> <div class="박"> 
+              
+              <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/여자.png" alt="여자" class="여자">
+                 <ul class="이름"> 
+           <li>googled</li>
+          <li>googledgoogledgoogledgoogledgoogledgoogledgoogledgoogledgoogled</li>
+                               </ul>
+              </li>
+                        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/여자.png" alt="여자" class="여자">
+                 <ul class="이름"> 
+           <li>googled</li>
+          <li>googledgoogledgoogledgoogledgoogledgoogledgoogledgoogledgoogled</li>
+                               </ul>
+              </li>
+                        <li><img src="https://googledrive.com/host/0BzN_XC8seF8SbUxncjNNQ3dJRUU/여자.png" alt="여자" class="여자">
+                 <ul class="이름"> 
+           <li>googled</li>
+          <li>googledgoogledgoogledgoogledgoogledgoogledgoogledgoogledgoogled</li>
+                               </ul>
+              </li>
+  
+            </ul>
+        </section>
+    </section>
 </body>
+</html>
