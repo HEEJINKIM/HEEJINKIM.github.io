@@ -32,13 +32,17 @@
   }
   
   .짝수:hover {
-      color: white;
+      color: red;
       cursor: pointer;
+            }
+    .odd {
+      
+      color : #E0275B;
+      
     }
     
-    
    .odd:hover {
-     background-color : #EA215B;
+
       cursor: pointer;
       width:10%;
      color : white;
@@ -46,64 +50,34 @@
    }
     
     
- body {
+ 
 
-      -moz-animation-duration: 3s;
-      -webkit-animation-duration: 3s;
-      -moz-animation-name: slidein;
-      -webkit-animation-name: slidein;
-      -moz-animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-direction: alternate;
-      -webkit-animation-direction: alternate;
-    }
-    
-    @-moz-keyframes slidein {
-      from {
-        margin-left:100%;
-        width:100%
-      }
-      
-      75% {
-        font-size:100%;
-        margin-left:0%;
-        width:100%;
-      }
-      
-      to {
-        margin-left:0%;
-        width:100%;
-      }
-    }
-    
-    @-webkit-keyframes slidein {
-      from {
-        margin-left:0%;
-        width:150%
-      }
-      
-      75% {
-        font-size:300%;
-        margin-left:0%;
-        width:150%;
-      }
-      
-      to {
-        margin-left:0%;
-        width:100%;
-      }
-    }
-    
-    
-    
   </style> 
   
+      <script>
+    $(function() {
+      for(var i = 0; i < 10; i++) {
+          for(var j = 1; j <= 10; j++) {
+              var n = i * 10 + j;
+              var $e = $('<div>' + n + '</div>');
+              $('body').append($e);
+              if(n % 2 === 0) {
+                $e.addClass('짝수');
+              }
+              if(n % 3 === 0) {
+                $e.addClass('홀수');
+              }
+            
+          }
+      }
+    });
+  </script>
 
 </head>
 
 <body>
   <ul class="num">
-    
+    <div>
     <li class="odd">1</li>
     <li class="짝수">2</li>
         <li class="odd">3</li>
@@ -204,7 +178,7 @@
     <li class="짝수">98</li>
         <li class="odd">99</li>
         <li class="짝수">100</li>
-    
+    </div>
       </ul>
   
  
