@@ -17,6 +17,7 @@
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+      padding-left:20px;
      }
     
     
@@ -25,8 +26,8 @@
      list-style : none;
      display:inline-block;
      text-align : center;
-     font-size: 100px;
-     padding: 0.15em;
+     font-size: 80px;
+     padding: 0.2em;
      max-width: 45em;
     
   }
@@ -36,42 +37,67 @@
       cursor: pointer;
             }
     .odd {
-      
-      color : #E0275B;
-      
-    }
+            color : #E0275B;
+          }
     
    .odd:hover {
-
       cursor: pointer;
-      width:10%;
-     color : white;
- 
+          color : white;
    }
     
     
+
+ body {
+
+      -moz-animation-duration: 5s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+      -moz-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-direction: alternate;
+      -webkit-animation-direction: alternate;
+    }
+    
+    @-moz-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      75% {
+        font-size:100%;
+        margin-left:0%;
+        width:100%;
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+    
+    @-webkit-keyframes slidein {
+      from {
+        margin-left:0%;
+        width:150%
+      }
+      
+      75% {
+        font-size:300%;
+        margin-left:0%;
+        width:100%;
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
  
 
   </style> 
   
-      <script>
-    $(function() {
-      for(var i = 0; i < 10; i++) {
-          for(var j = 1; j <= 10; j++) {
-              var n = i * 10 + j;
-              var $e = $('<div>' + n + '</div>');
-              $('body').append($e);
-              if(n % 2 === 0) {
-                $e.addClass('짝수');
-              }
-              if(n % 3 === 0) {
-                $e.addClass('홀수');
-              }
-            
-          }
-      }
-    });
-  </script>
 
 </head>
 
