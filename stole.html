@@ -1,0 +1,139 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Combining Transform Functions</title>
+
+<style type="text/css">
+
+	body {
+		font: 0.8em Arial; 
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color: #FCF1D5;
+     
+	}
+
+		body > div {
+			width: 400px;
+			margin: 20px auto 0;
+		}
+
+			article {
+				width: 420px;
+				margin-top: 5px;
+				float: left;
+			}
+
+				article div >img {
+					width: 150px;
+					height: 130px;
+                    border-radius: 30%;
+					float: left;
+					margin: 0px 5px 5px 0;
+					text-align: center;
+					padding-top: 30px;
+				}
+        
+				label {
+					cursor: pointer;
+					border-radius: 10%;
+					padding:18px;
+					background: #30C6B0;
+					width: 20px;
+					height: 15px;
+					float: left;
+                    text-align: left;
+					margin-right: 5px;
+                    
+				}
+
+				label:hover {
+					background: #90DBDD;
+				}
+
+				input {
+					position: absolute;
+					left: -9999px;
+				}
+
+				input:checked + label {
+					font-weight: bold;
+				}
+
+				input:checked ~ ol li {
+					opacity:0.3;
+					-webkit-transform: scale(0.7);
+				}
+
+				input:checked ~ article div {
+					-webkit-transform-origin: 0 0;
+				}
+
+				input[value="1"]:checked ~ article div:first-child {
+					-webkit-transform: translate(260px, 0) scale(3.13);
+				}
+
+				input[value="2"]:checked ~ article div:nth-child(2) {
+					-webkit-transform: translate(135px, 0) scale(3.13);
+				}
+
+				input[value="3"]:checked ~ article div:nth-child(3) {
+					-webkit-transform: translate(260px, -85px) scale(3.13);
+				}
+
+				input[value="4"]:checked ~ article div:nth-child(4) {
+					-webkit-transform: translate(135px, -85px) scale(3.13);
+				}
+
+h1 {
+	         
+			margin: -100px;
+            float: left;
+	        margin-left: 2px;
+		    height: 390px;
+}
+	
+</style>
+
+</head>
+
+<body>
+  <h1>
+<img class="logo" src="https://39ad20f0b8eea354f5a710f37f15c3e4f0cbbc5b.googledrive.com/host/0BzN_XC8seF8SQWpFb2tQa1RMTWc/%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9.png"></h1>
+	<div>
+
+		<input id="one" name="transforms" type="radio" value="1">
+        <label for="one">pink
+                         stole</label>
+
+		<input id="two" name="transforms" type="radio" value="2">
+        <label for="two">stripe
+          stole</label>
+
+        <input id="three" name="transforms" type="radio" value="3">
+        <label for="three">blue
+          stole</label>
+
+        <input id="four" name="transforms" type="radio" value="4">
+        <label for="four">dot
+          stole</label>
+
+        <input id="five" name="transforms" type="radio" value="5">
+        <label for="five">event</label>
+
+        <input id="six" name="transforms" type="radio" value="6">
+        <label for="six">notice</label>
+
+		<article>
+				    <div><img class="im" src="https://39ad20f0b8eea354f5a710f37f15c3e4f0cbbc5b.googledrive.com/host/0BzN_XC8seF8SQWpFb2tQa1RMTWc/KakaoTalk_20150319_231604094.jpg"></div>
+		    <div><img class="im" src="https://39ad20f0b8eea354f5a710f37f15c3e4f0cbbc5b.googledrive.com/host/0BzN_XC8seF8SQWpFb2tQa1RMTWc/KakaoTalk_20150319_231601329.jpg"></div>
+		    <div><img class="im" src="https://39ad20f0b8eea354f5a710f37f15c3e4f0cbbc5b.googledrive.com/host/0BzN_XC8seF8SQWpFb2tQa1RMTWc/KakaoTalk_20150319_231532913.jpg"></div>
+		    <div><img class="im" src="https://39ad20f0b8eea354f5a710f37f15c3e4f0cbbc5b.googledrive.com/host/0BzN_XC8seF8SQWpFb2tQa1RMTWc/KakaoTalk_20150319_231534802.jpg"></div>
+
+		</article>
+
+	</div>
+
+</body>
+</html>
